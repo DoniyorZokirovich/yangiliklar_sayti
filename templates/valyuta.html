@@ -1,0 +1,7 @@
+<ul class="kurs">
+{% for i in val %}
+  {% if i.Ccy == 'USD' or i.Ccy == 'EUR' or i.Ccy == 'RUB' %}
+    <li>{{ i.Ccy }} = {{ i.Rate }}</li>
+  {% endif %}
+{% endfor %}
+</ul>
